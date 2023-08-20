@@ -15,8 +15,8 @@
       href="./public/images/favicon.png"
       type="image/x-icon"
     />
-
-    <script src="script.js"></script>
+    <script type="module" src="./script.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
   </head>
   <body class="h-screen">
     <main class="h-full">
@@ -239,6 +239,48 @@
                 </div>
               </button>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="h-screen bg-[#DCC1AB]">
+        <div class="py-24 flex flex-col gap-4 px-40">
+          <span
+            class="text-[#1B5B31] text-xs not-italic font-normal leading-[150%] tracking-[-0.0075rem]"
+            >Realizacje</span
+          >
+          <h1
+            class="text-5xl not-italic font-medium leading-[115%] tracking-[-0.09rem] font-montserrat"
+          >
+            Nasze projekty
+          </h1>
+        </div>
+        <div
+          class="grid"
+          data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'
+        >
+          <div class="grid-item">
+            <img src="./public/images/grid1.png" alt="Our project example" />
+          </div>
+          <div class="grid-item">
+            <img src="./public/images/grid2.png" alt="Our project example" />
+          </div>
+          <div class="grid-item">
+            <img src="./public/images/grid3.png" alt="Our project example" />
+          </div>
+          <div class="grid-item">
+            <img src="./public/images/grid4.png" alt="Our project example" />
+          </div>
+          <div class="grid-item">
+            <img src="./public/images/grid5.png" alt="Our project example" />
+          </div>
+          <div class="grid-item">
+            <img src="./public/images/grid6.png" alt="Our project example" />
+          </div>
+          <div class="grid-item">
+            <img src="./public/images/grid7.png" alt="Our project example" />
+          </div>
+          <div class="grid-item">
+            <img src="./public/images/grid8.png" alt="Our project example" />
           </div>
         </div>
       </section>
