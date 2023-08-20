@@ -4,5 +4,8 @@
   },
   "scripts": {
     "dev:css": "tailwindcss -i ./tailwind.css -o ./style.css --watch"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
