@@ -1,9 +1,12 @@
 {
+  "homepage": "http://Novacci.github.io/respect-page",
   "dependencies": {
     "tailwindcss": "^3.3.3"
   },
   "scripts": {
-    "dev:css": "tailwindcss -i ./tailwind.css -o ./style.css --watch"
+    "dev:css": "tailwindcss -i ./tailwind.css -o ./style.css --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "gh-pages": "^6.0.0"
