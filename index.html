@@ -17,6 +17,16 @@
     />
     <script type="module" src="./script.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script>
+      window.onload = () => {
+        const grid = document.querySelector('.grid');
+        const masonry = new Masonry(grid, {
+          itemSelector: '.grid-item',
+          gutter: 40,
+          originLeft: false,
+        });
+      };
+    </script>
   </head>
   <body class="h-screen">
     <main class="h-full">
@@ -254,33 +264,62 @@
             Nasze projekty
           </h1>
         </div>
-        <div
-          class="grid"
-          data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'
-        >
-          <div class="grid-item">
-            <img src="./public/images/grid1.png" alt="Our project example" />
+        <div class="grid w-4/5 mx-auto my-0">
+          <div class="grid-item pb-10">
+            <img
+              class="w-full"
+              src="./public/images/grid1.png"
+              alt="Our project example"
+            />
+          </div>
+          <div class="grid-item pb-10">
+            <img
+              class="w-full"
+              src="./public/images/grid2.png"
+              alt="Our project example"
+            />
+          </div>
+          <div class="grid-item pb-10">
+            <img
+              class="w-full"
+              src="./public/images/grid3.png"
+              alt="Our project example"
+            />
+          </div>
+          <div class="grid-item pb-10">
+            <img
+              class="w-full"
+              src="./public/images/grid4.png"
+              alt="Our project example"
+            />
+          </div>
+          <div class="grid-item pb-10">
+            <img
+              class="w-full"
+              src="./public/images/grid5.png"
+              alt="Our project example"
+            />
+          </div>
+          <div class="grid-item pb-10">
+            <img
+              class="w-full"
+              src="./public/images/grid6.png"
+              alt="Our project example"
+            />
           </div>
           <div class="grid-item">
-            <img src="./public/images/grid2.png" alt="Our project example" />
+            <img
+              class="w-full"
+              src="./public/images/grid7.png"
+              alt="Our project example"
+            />
           </div>
           <div class="grid-item">
-            <img src="./public/images/grid3.png" alt="Our project example" />
-          </div>
-          <div class="grid-item">
-            <img src="./public/images/grid4.png" alt="Our project example" />
-          </div>
-          <div class="grid-item">
-            <img src="./public/images/grid5.png" alt="Our project example" />
-          </div>
-          <div class="grid-item">
-            <img src="./public/images/grid6.png" alt="Our project example" />
-          </div>
-          <div class="grid-item">
-            <img src="./public/images/grid7.png" alt="Our project example" />
-          </div>
-          <div class="grid-item">
-            <img src="./public/images/grid8.png" alt="Our project example" />
+            <img
+              class="w-full"
+              src="./public/images/grid8.png"
+              alt="Our project example"
+            />
           </div>
         </div>
       </section>
