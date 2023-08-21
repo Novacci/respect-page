@@ -40,10 +40,10 @@
             <li><a href="#">O firmie</a></li>
             <li><a href="#">Realizacje</a></li>
             <li><a href="#">Kontakt</a></li>
-            <li>
-              <a href="#"
-                ><img src="./public/images/lupa.svg" alt="Loupe icon"
-              /></a>
+            <li id="loupe-container">
+              <button id="loupe">
+                <img src="./public/images/lupa.svg" alt="Loupe icon" />
+              </button>
             </li>
           </ul>
         </nav>
@@ -90,6 +90,24 @@
           src="./public/images/photo.png"
           alt="main photo"
         />
+        <div
+          class="z-50 bg-[#F5F0EC] absolute bottom-0 right-0 flex items-end px-12 py-6 gap-8"
+        >
+          <button>
+            <img
+              class="w-12 h-12"
+              src="./public/images/leftArrow.svg"
+              alt="Left arrow icon"
+            />
+          </button>
+          <button>
+            <img
+              class="w-12 h-12"
+              src="./public/images/rightArrow.svg"
+              alt="Right arrow icon"
+            />
+          </button>
+        </div>
       </section>
       <section class="w-full h-screen bg-[#F5F0EC]">
         <div class="flex flex-col">
@@ -278,7 +296,8 @@
             Nasze projekty
           </h1>
         </div>
-        <div class="grid w-4/5 mx-auto my-0">
+
+        <div class="grid w-4/5 mx-auto my-0 my-gradient">
           <div class="grid-item pb-10">
             <img
               class="w-full"
@@ -411,6 +430,11 @@
           </div>
         </div>
       </footer>
+      <section
+        class="h-screen w-full bg-gradient-to-b from-[#DCC1AB] to-white opacity-80"
+      >
+        <h1 class="font-3xl">heja</h1>
+      </section>
     </main>
   </body>
 </html>
