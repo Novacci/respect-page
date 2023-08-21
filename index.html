@@ -27,9 +27,12 @@
         });
         const galleryContainer = document.getElementById('gallery');
         const gradientContainer = document.getElementById('gallery-gradient');
-        masonry.on('layoutComplete', function (items) {
-          console.log(items.length);
-          galleryContainer.style.height = gradientContainer.clientHeight + 'px';
+        masonry.on('layoutComplete', () => {
+          const expandGalleryButton = document.getElementById('expand-gallery');
+          if (!expandGalleryButton) {
+            galleryContainer.style.height =
+              gradientContainer.clientHeight + 'px';
+          }
         });
       };
     </script>
