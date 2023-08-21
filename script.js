@@ -19,7 +19,7 @@ input.style.borderRadius = '5px';
 input.style.padding = '4px';
 
 expandGalleryButton.addEventListener('click', () => {
-  galleryContainer.style.height = '200vh';
+  galleryContainer.style.height = gradientContainer.clientHeight + 'px';
   gradientContainer.classList.remove('my-gradient');
   expandGalleryButton.remove();
 });

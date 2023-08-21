@@ -25,6 +25,12 @@
           gutter: 40,
           originLeft: false,
         });
+        const galleryContainer = document.getElementById('gallery');
+        const gradientContainer = document.getElementById('gallery-gradient');
+        masonry.on('layoutComplete', function (items) {
+          console.log(items.length);
+          galleryContainer.style.height = gradientContainer.clientHeight + 'px';
+        });
       };
     </script>
   </head>
@@ -240,12 +246,18 @@
           </div>
         </div>
       </section>
-      <section id="o-firmie" class="flex w-full h-screen bg-[#1B5B31]">
-        <img
-          class="flex-1"
-          src="./public/images/photo2.png"
-          alt="Exapmple project of house"
-        />
+      <section
+        id="o-firmie"
+        class="flex w-full h-screen bg-[#1B5B31] max-sm:flex-col"
+      >
+        <div class="flex">
+          <img
+            class="flex-1"
+            src="./public/images/photo2.png"
+            alt="Example project of house"
+          />
+        </div>
+
         <div class="text-[#F5F0EC] flex-1">
           <div class="flex flex-col justify-center h-full items-center">
             <div class="w-1/2">
@@ -380,10 +392,10 @@
       <section id="kontakt" class="w-full h-4/6 bg-[#F5F0EC]">
         <div class="flex justify-center h-full items-center">
           <div
-            class="bg-[#1B5B31] py-[8.5rem] px-[6.88rem] max-w-[60%] flex gap-16 justify-center items-center"
+            class="bg-[#1B5B31] py-[8.5rem] px-[6.88rem] max-w-[60%] flex gap-16 justify-center items-center max-sm:flex-col max-sm:py-[5rem]"
           >
             <div
-              class="flex flex-col text-[2.5rem] not-italic leading-[120%] font-normal font-montserrat text-[#F5F0EC]"
+              class="flex flex-col text-[2.5rem] not-italic leading-[120%] font-normal font-montserrat text-[#F5F0EC] max-sm:text-3xl"
             >
               <span>Zostańmy w kontakcie!</span>
               <span
