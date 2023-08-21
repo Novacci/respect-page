@@ -31,10 +31,27 @@
   <body class="h-screen">
     <main class="h-full">
       <header class="flex justify-center">
-        <nav class="flex w-4/5 py-6 b bg-[#FFF] items-center justify-between">
+        <nav class="flex w-4/5 py-6 bg-[#FFF] items-center justify-between">
           <img src="./public/images/giarddesign.svg" alt="giarddesing" />
+
+          <button id="mobile-menu-button" class="md:hidden">
+            <svg
+              class="h-6 w-6"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 6H20M4 12H20M4 18H20"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
           <ul
-            class="flex gap-12 not-italic font-normal text-sm tracking-[-0.00875rem]"
+            class="md:flex hidden gap-12 not-italic font-normal text-sm tracking-[-0.00875rem]"
           >
             <li><a href="#">Oferta</a></li>
             <li><a href="#">O firmie</a></li>
@@ -112,7 +129,7 @@
           </button>
         </div>
       </section>
-      <section class="w-full h-screen bg-[#F5F0EC]">
+      <section class="w-full h-screen bg-[#F5F0EC] max-sm:flex-col">
         <div class="flex flex-col">
           <div class="flex flex-col gap-8 mx-[12.5rem] pt-[7.5rem]">
             <div class="flex flex-col gap-4">

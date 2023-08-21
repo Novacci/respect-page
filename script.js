@@ -9,6 +9,9 @@ const mainImage = document.getElementById('main-image');
 const leftArrowButton = document.getElementById('left-arrow');
 const rightArrowButton = document.getElementById('right-arrow');
 const input = document.createElement('input');
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.querySelector('ul');
+
 input.type = 'text';
 input.value = 'Szukaj...';
 input.style.border = '2px solid #111';
@@ -39,4 +42,8 @@ rightArrowButton.addEventListener('click', () => {
 
 leftArrowButton.addEventListener('click', () => {
   mainImage.style.display = 'flex';
+});
+
+mobileMenuButton.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
 });
