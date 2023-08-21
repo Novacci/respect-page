@@ -21,9 +21,7 @@ input.style.padding = '4px';
 expandGalleryButton.addEventListener('click', () => {
   galleryContainer.style.height = '200vh';
   gradientContainer.classList.remove('my-gradient');
-  if (galleryContainer.style.height === '200vh') {
-    expandGalleryButton.remove();
-  }
+  expandGalleryButton.remove();
 });
 
 loupeButton.addEventListener('click', () => {
