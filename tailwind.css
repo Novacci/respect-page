@@ -2,7 +2,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-.my-gradient {
+.my-gradient::after {
+  content: '';
   background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, #dcc1ab 100%);
+  display: block;
+  position: relative;
 }
