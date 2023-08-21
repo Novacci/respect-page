@@ -92,7 +92,7 @@
           alt="main photo"
         />
         <div
-          class="z-50 bg-[#F5F0EC] absolute bottom-0 right-0 flex items-end px-12 py-8 gap-10"
+          class="z-50 bg-[#F5F0EC] absolute -mb-[10px] bottom-0 right-0 flex items-end px-12 py-8 gap-10"
         >
           <button id="left-arrow">
             <img
@@ -277,15 +277,8 @@
       </section>
       <section
         id="gallery"
-        class="h-screen transition-all duration-2000 overflow-hidden bg-[#DCC1AB]"
+        class="h-screen relative transition-all duration-[2s] overflow-hidden bg-[#DCC1AB]"
       >
-        <button
-          id="expand-gallery"
-          class="pt-3 pb-3.5 flex items-center gap-2 px-[1.375rem] border border-solid rounded-[12.5rem] border-[#111]"
-        >
-          Rozwiń
-          <img src="./public/images/arrowBottom.svg" alt="Arrow Bottom" />
-        </button>
         <div class="py-24 flex flex-col gap-4 px-40">
           <span
             class="text-[#1B5B31] text-xs not-italic font-normal leading-[150%] tracking-[-0.0075rem]"
@@ -297,60 +290,66 @@
             Nasze projekty
           </h1>
         </div>
-
+        <button
+          id="expand-gallery"
+          class="pt-3 pb-3.5 flex items-center z-[1000] left-2/4 bottom-[10%] gap-2 px-[1.375rem] absolute border border-solid rounded-[12.5rem] border-[#111]"
+        >
+          Rozwiń
+          <img src="./public/images/arrowBottom.svg" alt="Arrow Bottom" />
+        </button>
         <div id="gallery-gradient" class="grid w-4/5 mx-auto my-0 my-gradient">
           <div class="grid-item pb-10">
             <img
-              class="w-full"
+              class="w-full transition-transform duration-[0.4s] hover:scale-[1.1]"
               src="./public/images/grid1.png"
               alt="Our project example"
             />
           </div>
           <div class="grid-item pb-10">
             <img
-              class="w-full"
+              class="w-full transition-transform duration-[0.4s] hover:scale-[1.1]"
               src="./public/images/grid2.png"
               alt="Our project example"
             />
           </div>
           <div class="grid-item pb-10">
             <img
-              class="w-full"
+              class="w-full transition-transform duration-[0.4s] hover:scale-[1.1]"
               src="./public/images/grid3.png"
               alt="Our project example"
             />
           </div>
           <div class="grid-item pb-10">
             <img
-              class="w-full"
+              class="w-full transition-transform duration-[0.4s] hover:scale-[1.1]"
               src="./public/images/grid4.png"
               alt="Our project example"
             />
           </div>
           <div class="grid-item pb-10">
             <img
-              class="w-full"
+              class="w-full transition-transform duration-[0.4s] hover:scale-[1.1]"
               src="./public/images/grid5.png"
               alt="Our project example"
             />
           </div>
           <div class="grid-item pb-10">
             <img
-              class="w-full"
+              class="w-full transition-transform duration-[0.4s] hover:scale-[1.1]"
               src="./public/images/grid6.png"
               alt="Our project example"
             />
           </div>
           <div class="grid-item">
             <img
-              class="w-full"
+              class="w-full transition-transform duration-[0.4s] hover:scale-[1.1]"
               src="./public/images/grid7.png"
               alt="Our project example"
             />
           </div>
           <div class="grid-item">
             <img
-              class="w-full"
+              class="w-full transition-transform duration-[0.4s] hover:scale-[1.1]"
               src="./public/images/grid8.png"
               alt="Our project example"
             />

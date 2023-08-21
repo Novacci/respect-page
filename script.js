@@ -8,7 +8,6 @@ const gradientContainer = document.getElementById('gallery-gradient');
 const mainImage = document.getElementById('main-image');
 const leftArrowButton = document.getElementById('left-arrow');
 const rightArrowButton = document.getElementById('right-arrow');
-
 const input = document.createElement('input');
 input.type = 'text';
 input.value = 'Szukaj...';
@@ -19,6 +18,9 @@ input.style.padding = '4px';
 expandGalleryButton.addEventListener('click', () => {
   galleryContainer.style.height = '200vh';
   gradientContainer.classList.remove('my-gradient');
+  if (galleryContainer.style.height === '200vh') {
+    expandGalleryButton.remove();
+  }
 });
 
 loupeButton.addEventListener('click', () => {

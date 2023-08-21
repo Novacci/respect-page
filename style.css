@@ -538,6 +538,10 @@ video {
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -546,12 +550,32 @@ video {
   right: 0px;
 }
 
+.top-3\/4 {
+  top: 75%;
+}
+
+.top-\[5px\] {
+  top: 5px;
+}
+
+.bottom-\[10\%\] {
+  bottom: 10%;
+}
+
+.left-2\/4 {
+  left: 50%;
+}
+
 .z-10 {
   z-index: 10;
 }
 
 .z-50 {
   z-index: 50;
+}
+
+.z-\[1000\] {
+  z-index: 1000;
 }
 
 .mx-\[12\.5rem\] {
@@ -584,6 +608,10 @@ video {
 
 .mt-24 {
   margin-top: 6rem;
+}
+
+.-mb-\[10px\] {
+  margin-bottom: -10px;
 }
 
 .flex {
@@ -1078,8 +1106,22 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-\[0\.4s\] {
   transition-duration: 0.4s;
+}
+
+.duration-\[2s\] {
+  transition-duration: 2s;
+}
+
+.duration-\[5s\] {
+  transition-duration: 5s;
 }
 
 .my-gradient::after {
