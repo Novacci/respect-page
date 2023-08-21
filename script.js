@@ -13,7 +13,7 @@ const mobileMenuButton = document.getElementById('mobile-menu-button');
 const mobileMenu = document.querySelector('ul');
 
 input.type = 'text';
-input.value = 'Szukaj...';
+input.placeholder = 'Szukaj...';
 input.style.border = '2px solid #111';
 input.style.borderRadius = '5px';
 input.style.padding = '4px';
